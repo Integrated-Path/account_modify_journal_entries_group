@@ -1,7 +1,9 @@
 <odoo>
-	<data>
-		<record model="res.groups">
-
+	<data noupdate="1">
+		<record id="groups_account" model="res.groups">
+			<field name="category_id" ref="base.module_category_accounting" />
+			<field name="name">Modify Account Moves (cancel, revert, reset)</field>
+			<field name="users" eval="[(4, ref('base.user_admin'))]"/>
 		</record>
 	</data>
 </odoo>

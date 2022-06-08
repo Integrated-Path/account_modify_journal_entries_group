@@ -9,5 +9,7 @@
     "website": "https://www.int-path.com",
     "depends": ["account"],
     "data": [
+        "data/res_groups_data.xml",
+        "views/account_move_views.xml",
     ],
 }
